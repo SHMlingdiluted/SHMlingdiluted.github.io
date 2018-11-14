@@ -2,7 +2,10 @@ body {
 	background: #f2f0f0;
 	font-size: 16px;
 }
-* { box-sizing: border-box;}
+* { 
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+}
 .fl { float: left;}
 .fr { float: right;}
 .clearfix:after {
@@ -91,6 +94,119 @@ body {
 	color: #999;
 }
 
+/*购物车*/
+.topCart {
+	position: relative;
+}
+.myCart {
+	display: block;
+	z-index: 999;
+	position: relative;
+	width: 180px;
+	border: #b90000 1px solid;
+	padding-left: 54px;
+	line-height: 38px;
+	background: #fff;
+	color: #b90000;
+}
+.topCart i {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	line-height: 38px;
+	text-align: center;
+	/*background: #fff;*/
+	font-size: 28px;
+	font-weight: 700;
+	color: #b90000;
+}
+.cart_txt {
+	z-index: 888;
+	position: absolute;
+	top: 38px;
+	right: 0;
+	width: 300px;
+	border: #b90000 1px solid;
+	background: #fff;
+	color: #666;
+	display: none;
+}
+.cart_empty {
+	padding: 10px;
+	color: #666;
+	font-size: 14px;
+}
+.cart_list {
+	max-height: 200px;
+	overflow-y: auto;
+	display: none;
+}
+.cart_list li {
+	display: flex;
+	padding: 10px;
+	border-bottom: #bfbfbf 1px solid;
+}
+.cart_list li:last-child {
+	border-bottom: 0;
+}
+.cart_pro {
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+.cart_img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	border: #bfbfbf 1px solid;
+}
+.cart_img img {
+	width: 100%;
+}
+.cart_name {
+	flex: 1;
+	height: 56px;
+	font-size: 14px;
+	color: #666;
+	overflow: hidden;
+}
+.cart_info {
+	text-align: right;
+}
+.cart_price {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	background: #f5f5f5;
+	font-size: 14px;
+	display: none;
+}
+.cart_price p {
+	flex: 1;
+}
+.cart_price a {
+	width: 80px;
+	line-height: 30px;
+	border-radius: 6px;
+	text-align: center;
+	background: #f00;
+	color: #fff;
+}
+.cart_name:hover,
+.cart_delete:hover {
+	color: #b90000;
+}
+.topCart:hover .myCart {
+	border-bottom: none;
+}
+.topCart:hover .cart_txt {
+	display: block;
+}
+
+
 /*nav*/
 .nav {
 	background: #b90000;
@@ -139,9 +255,6 @@ body {
 }
 .category dd + dd {
 	border-top: #900 1px solid;
-}
-.category dd:last-child {
-	/*border: none;*/
 }
 .category h3 {
 	font-size: 16px;
@@ -215,3 +328,16 @@ body {
 .category dd:hover .branch {
 	display: block;
 }
+
+/*footer*/
+.footer {
+	margin-top: 80px;
+}
+.copyRight {
+	line-height: 30px;
+	padding: 20px;
+	text-align: center;
+	background: #333;
+	color: #ccc;
+}
+
