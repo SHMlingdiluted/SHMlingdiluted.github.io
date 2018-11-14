@@ -1669,10 +1669,18 @@
 		//返回顶部
 		$(".returnTop").click(function () {
 			$("html,body").animate({scrollTop: 0},500);
-//			$(".fix-left").hide()
+			//$(".fix-left").hide()
 		})
 	})
 	//
+	$(".slide li").css({
+		"width": + $(".wrapper").outerWidth()
+	})
+	$(".slide").css({
+		"width": + $(".wrapper").outerWidth()*6,
+		"left": + $(".wrapper").outerWidth()
+	})
+	
 </script>
 </body>
 </html>
