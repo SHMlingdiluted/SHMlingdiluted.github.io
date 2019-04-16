@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+<meta charset="UTF-8"/>
+<title>茶叶商城</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/product.css" />
+<link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
+</head>
+<body>
+
+<div class="topNav">
+	<div class="shop common">
+		<div class="topLogin fl">
+			<span>您好，请 [ <a href="login.html">登录</a> ] <small>|</small> [ <a href="">注册</a> ]</span>
+			<span style="display: none;">您好，<strong>18213944620</strong>，[ 退出 ]</span>
+		</div>
+		<div class="innerShop fr">
+			<a href="">用户中心</a>
+			<small>|</small>
+			<a href="">帮助中心</a>
+			<small>|</small>
+			<a href="">EN</a>
+			<small>|</small>
+			<a href="javascript:void(0);" class="hotLine">服务热线：400-0185-515</a>
+		</div>
+	</div>
+</div>
+<div class="header">
+	<div class="common clearfix">
+		<div class="logo fl"><img src="images/yunji.png" alt="logo" /></div>
+		<div class="seachBox fl">
+			<div class="search">
+				<input class="key" type="text" placeholder="花茶"  />
+				<input class="btn-search" type="button" value="搜 索"/>
+			</div>
+			<div class="keyword">
+				<a href="">普洱茶</a>
+				<a href="">红茶</a>
+				<a href="">绿茶</a>
+			</div>
+		</div>
+		<div class="topCart fr">
+			<a href="cart.html" class="myCart">
+				<i class="pe-7s-cart"></i>
+				我的购物车
+				(<strong>0</strong>)
+			</a>
+			<!--下拉窗口-->
+			<div class="cart_txt">
+				<div class="cart_empty">您的购物车空空的，赶紧选购吧！</div>
+				<ul class="cart_list">
+					<li>
+						<a href="#" class="cart_pro">
+							<div class="cart_img">
+								<img src="images/tea/tea_04.png" alt="" />
+							</div>
+							<div class="cart_name">2006易武正山普洱茶熟茶饼 古树纯料 云南普洱茶古树茶 357g</div>
+						</a>
+						<div class="cart_info">
+							<strong>¥580.00</strong>
+							<span class="cart_delete">删除</span>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="cart_pro">
+							<div class="cart_img">
+								<img src="images/tea/tea_02.png" alt="" />
+							</div>
+							<div class="cart_name">2018 春茶 特级大红袍 200克</div>
+						</a>
+						<div class="cart_info">
+							<strong>¥228.00</strong>
+							<span class="cart_delete">删除</span>
+						</div>
+					</li>
+				</ul>
+				<div class="cart_price">
+					<p>共<strong>2</strong>件商品，合计<strong>¥580.00</strong></p>
+					<a href="">去结算</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="nav">
+	<div class="navBox common">
+		<ul class="mainNav">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="">茶具馆</a></li>
+			<li><a href="">专属定制</a></li>
+			<li><a href="">大师名匠馆</a></li>
+			<li><a href="">促销活动</a></li>
+			<li><a href="">积分商城</a></li>
+		</ul>
+		<div class="wrap_category">
+			<h2 class="category_all">全部商品分类</h2>
+			<dl class="category" id="category_pro">
+				<dd>
+					<h3>乌龙茶</h3>
+					<h4>
+						<a href="search_product.html">铁观音</a>
+						<a href="search_product.html">黄金桂</a>
+						<a href="search_product.html">大红袍</a>
+						<span class="arrowRight">&gt;</span>
+					</h4>
+					<div class="branch">
+						<ul>
+							<li>
+								<span>品牌</span>
+								<p>
+									<a href="">铁观音</a>
+	                                <a href="">黄金桂</a>                          
+	                                <a href="">大红袍</a>                           
+	                                <a href="">台湾冻顶乌龙</a>
+	                            </p>
+							</li>
+							<li>
+								<span>用途</span>
+								<p>
+									<a href="">经济自饮装</a>
+	                                <a href="">精美礼品装</a>                          
+	                            </p>
+							</li>
+							<li>
+								<span>年份</span>
+								<p>
+									<a href="">2015</a>
+	                                <a href="">2016</a>                          
+	                                <a href="">2017</a>                           
+	                                <a href="">2018</a>
+	                            </p>
+							</li>
+							<li>
+								<span>净重</span>
+								<p>
+									<a href="">0—100g</a>
+	                                <a href="">101—300g</a>                          
+	                                <a href="">301—500g</a>                           
+	                                <a href="">501—1000g</a>
+	                                <a href="">1000g以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>价格</span>
+								<p>
+									<a href="">0-99元</a>
+	                                <a href="">100-199元</a>                          
+	                                <a href="">200-299元</a>                           
+	                                <a href="">300-500元</a>
+	                                <a href="">501-1000元</a>
+	                                <a href="">1000元以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>包装</span>
+								<p>
+									<a href="">铁盒装</a>
+	                                <a href="">罐装</a>                          
+	                                <a href="">精美礼盒装</a>                           
+	                                <a href="">盒装</a>
+	                                <a href="">袋装</a>
+	                            </p>
+							</li>
+						</ul>
+					</div>
+				</dd>
+				<dd>
+					<h3>红茶</h3>
+					<h4>
+						<a href="">正山小种</a>
+						<a href="">坦洋工夫</a>
+						<a href="">滇红</a>
+						<span class="arrowRight">&gt;</span>
+					</h4>
+					<div class="branch">
+						<ul>
+							<li>
+								<span>品牌</span>
+								<p>
+									<a href="">正山小种</a>
+	                                <a href="">坦洋工夫</a>                          
+	                                <a href="">滇红</a>                           
+	                                <a href="">中茶</a>
+	                            </p>
+							</li>
+							<li>
+								<span>用途</span>
+								<p>
+									<a href="">经济自饮装</a>
+	                                <a href="">精美礼品装</a>                          
+	                            </p>
+							</li>
+							<li>
+								<span>年份</span>
+								<p>
+									<a href="">2012</a>
+									<a href="">2013</a>
+									<a href="">2014</a>
+									<a href="">2015</a>
+	                                <a href="">2016</a>                          
+	                                <a href="">2018</a>
+	                            </p>
+							</li>
+							<li>
+								<span>净重</span>
+								<p>
+									<a href="">0—100g</a>
+	                                <a href="">101—300g</a>                          
+	                                <a href="">301—500g</a>                           
+	                                <a href="">501—1000g</a>
+	                                <a href="">1000g以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>价格</span>
+								<p>
+									<a href="">0-99元</a>
+	                                <a href="">100-199元</a>                          
+	                                <a href="">200-299元</a>                           
+	                                <a href="">300-500元</a>
+	                                <a href="">501-1000元</a>
+	                                <a href="">1000元以上</a>
+	                            </p>
+							</li>
+													<li>
+								<span>包装</span>
+								<p>
+									<a href="">自封袋装</a>
+	                                <a href="">罐装</a>                          
+	                                <a href="">精美礼盒装</a>                           
+	                                <a href="">盒装</a>
+	                                <a href="">袋装</a>
+	                            </p>
+							</li>
+						</ul>
+					</div>
+				</dd>
+				<dd>
+					<h3>绿茶</h3>
+					<h4>
+						<a href="">龙井</a>
+						<a href="">碧螺春</a>
+						<a href="">信阳毛尖</a>
+						<span class="arrowRight">&gt;</span>
+					</h4>
+					<div class="branch">
+						<ul>
+							<li>
+								<span>品牌</span>
+								<p>
+									<a href="">龙井</a>
+	                                <a href="">碧螺春</a>                          
+	                                <a href="">信阳毛巾</a>                           
+	                                <a href="">黄山毛峰</a>
+	                                <a href="">南京雨花</a>
+	                                <a href="">庐山云雾</a>
+	                                <a href="">六安瓜片</a>
+	                                <a href="">峨眉峨蕊茶</a>
+	                                <a href="">华顶云雾</a>
+	                                <a href="">蒙顶茶</a>
+	                            </p>
+							</li>
+							<li>
+								<span>用途</span>
+								<p>
+									<a href="">经济自饮装</a>
+	                                <a href="">精美礼品装</a>                          
+	                            </p>
+							</li>
+							<li>
+								<span>年份</span>
+								<p>
+									<a href="">2014</a>
+									<a href="">2015</a>
+	                                <a href="">2016</a>                          
+	                                <a href="">2018</a>
+	                            </p>
+							</li>
+							<li>
+								<span>净重</span>
+								<p>
+									<a href="">0—100g</a>
+	                                <a href="">101—300g</a>                          
+	                                <a href="">301—500g</a>                           
+	                                <a href="">501—1000g</a>
+	                                <a href="">1000g以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>价格</span>
+								<p>
+									<a href="">0-99元</a>
+	                                <a href="">100-199元</a>                          
+	                                <a href="">200-299元</a>                           
+	                                <a href="">300-500元</a>
+	                                <a href="">501-1000元</a>
+	                                <a href="">1000元以上</a>
+	                            </p>
+							</li>
+													<li>
+								<span>包装</span>
+								<p>
+									<a href="">自封袋装</a>
+	                                <a href="">罐装</a>                          
+	                                <a href="">袋装</a>
+	                            </p>
+							</li>
+						</ul>
+					</div>
+				</dd>
+				<dd>
+					<h3>白茶</h3>
+					<h4>
+						<a href="">白毫银针</a>
+						<a href="">白牡丹</a>
+						<a href="">贡眉</a>
+						<span class="arrowRight">&gt;</span>
+					</h4>
+					<div class="branch">
+						<ul>
+							<li>
+								<span>品牌</span>
+								<p>
+									<a href="">白毫银针</a>
+	                                <a href="">白牡丹</a>                          
+	                                <a href="">贡眉</a>                           
+	                                <a href="">寿眉</a>
+	                            </p>
+							</li>
+							<li>
+								<span>用途</span>
+								<p>
+									<a href="">经济自饮装</a>
+	                                <a href="">精美礼品装</a>                          
+	                            </p>
+							</li>
+							<li>
+								<span>年份</span>
+								<p>
+									<a href="">2014</a>
+									<a href="">2015</a>
+	                                <a href="">2016</a>                          
+	                                <a href="">2018</a>
+	                            </p>
+							</li>
+							<li>
+								<span>净重</span>
+								<p>
+									<a href="">0—100g</a>
+	                                <a href="">101—300g</a>                          
+	                                <a href="">301—500g</a>                           
+	                                <a href="">501—1000g</a>
+	                                <a href="">1000g以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>价格</span>
+								<p>
+									<a href="">0-99元</a>
+	                                <a href="">100-199元</a>                          
+	                                <a href="">200-299元</a>                           
+	                                <a href="">300-500元</a>
+	                                <a href="">501-1000元</a>
+	                                <a href="">1000元以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>包装</span>
+								<p>
+									<a href="">铁盒装</a>
+	                                <a href="">罐装</a>                          
+	                                <a href="">精美礼盒装</a>                           
+	                                <a href="">盒装</a>
+	                                <a href="">袋装</a>
+	                            </p>
+							</li>
+						</ul>
+					</div>
+				</dd>
+				<dd>
+					<h3>黑茶</h3>
+					<h4>
+						<a href="">白沙溪</a>
+						<a href="">茯砖茶</a>
+						<a href="">六堡茶</a>
+						<span class="arrowRight">&gt;</span>
+					</h4>
+					<div class="branch">
+						<ul>
+							<li>
+								<span>品牌</span>
+								<p>
+									<a href="">白沙溪</a>
+	                                <a href="">茯砖茶</a>                          
+	                                <a href="">六堡茶</a>                           
+	                                <a href="">湘益</a>
+	                                <a href="">安化</a>
+	                            </p>
+							</li>
+							<li>
+								<span>用途</span>
+								<p>
+									<a href="">经济自饮装</a>
+	                                <a href="">精美礼品装</a>                          
+	                            </p>
+							</li>
+							<li>
+								<span>年份</span>
+								<p>
+									<a href="">2014</a>
+									<a href="">2015</a>
+	                                <a href="">2016</a>                          
+	                                <a href="">2018</a>
+	                            </p>
+							</li>
+							<li>
+								<span>净重</span>
+								<p>
+									<a href="">0—100g</a>
+	                                <a href="">101—300g</a>                          
+	                                <a href="">301—500g</a>                           
+	                                <a href="">501—1000g</a>
+	                                <a href="">1000g以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>价格</span>
+								<p>
+									<a href="">0-99元</a>
+	                                <a href="">100-199元</a>                          
+	                                <a href="">200-299元</a>                           
+	                                <a href="">300-500元</a>
+	                                <a href="">501-1000元</a>
+	                                <a href="">1000元以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>包装</span>
+								<p>
+									<a href="">铁盒装</a>
+	                                <a href="">罐装</a>                          
+	                                <a href="">精美礼盒装</a>                           
+	                                <a href="">盒装</a>
+	                                <a href="">袋装</a>
+	                                <a href="">筒装</a>
+	                            </p>
+							</li>
+						</ul>
+					</div>
+				</dd>
+				<dd>
+					<h3>普洱茶</h3>
+					<h4>
+						<a href="">大益</a>
+						<a href="">八角亭</a>
+						<a href="">老君岭</a>
+						<span class="arrowRight">&gt;</span>
+					</h4>
+					<div class="branch">
+						<ul>
+							<li>
+								<span>品牌</span>
+								<p>
+									<a href="">大益</a>
+	                                <a href="">八角亭</a>
+	                                <a href="">老君岭</a>
+	                            	<a href="">龙生</a>                           
+	                                <a href="">中茶</a>
+	                                <a href="">龙园号</a>
+	                                <a href="">老同志</a>
+	                            </p>
+							</li>
+							<li>
+								<span>用途</span>
+								<p>
+									<a href="">经济自饮装</a>
+									<a href="">精美礼品装</a>
+	                            </p>
+							</li>
+							<li>
+								<span>年份</span>
+								<p>
+									<a href="">2006以前</a>
+									<a href="">2007</a>
+	                                <a href="">2008</a>                          
+	                                <a href="">2009</a>
+									<a href="">2010</a>
+									<a href="">2011</a>
+	                                <a href="">2012</a>                          
+	                                <a href="">2013</a>
+									<a href="">2014</a>
+									<a href="">2015</a>
+	                                <a href="">2016</a>                          
+	                                <a href="">2018</a>
+	                            </p>
+							</li>
+							<li>
+								<span>净重</span>
+								<p>
+									<a href="">0—100g</a>
+	                                <a href="">101—300g</a>                          
+	                                <a href="">301—500g</a>                           
+	                                <a href="">501—1000g</a>
+	                                <a href="">1000g以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>价格</span>
+								<p>
+									<a href="">0-99元</a>
+	                                <a href="">100-199元</a>                          
+	                                <a href="">200-299元</a>                           
+	                                <a href="">300-500元</a>
+	                                <a href="">501-1000元</a>
+	                                <a href="">1000元以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>包装</span>
+								<p>
+									<a href="">罐装</a>                          
+	                                <a href="">自封袋装</a>
+	                                <a href="">盒装</a>                          
+	                                <a href="">袋装</a>
+	                                <a href="">精美礼盒装</a>
+	                                <a href="">竹筒装</a>
+	                                <a href="">牛皮纸装</a>
+	                            </p>
+							</li>
+						</ul>
+					</div>
+				</dd>
+				<dd>
+					<h3>花茶</h3>
+					<h4>
+						<a href="">菊花</a>
+						<a href="">玫瑰花</a>
+						<a href="">茉莉花</a>
+						<span class="arrowRight">&gt;</span>
+					</h4>
+					<div class="branch">
+						<ul>
+							<li>
+								<span>品牌</span>
+								<p>
+									<a href="">菊花</a>
+	                                <a href="">玫瑰花</a>
+	                                <a href="">茉莉花</a>
+	                            	<a href="">金银花</a>                           
+	                                <a href="">桂花茶</a>
+	                                <a href="">兰花茶</a>
+	                                <a href="">荷花茶</a>
+	                            </p>
+							</li>
+							<li>
+								<span>用途</span>
+								<p>
+									<a href="">经济自饮装</a>
+	                            </p>
+							</li>
+							<li>
+								<span>年份</span>
+								<p>
+									<a href="">2014</a>
+									<a href="">2015</a>
+	                                <a href="">2016</a>                          
+	                                <a href="">2018</a>
+	                            </p>
+							</li>
+							<li>
+								<span>净重</span>
+								<p>
+									<a href="">0—100g</a>
+	                                <a href="">101—300g</a>                          
+	                                <a href="">301—500g</a>                           
+	                                <a href="">501—1000g</a>
+	                                <a href="">1000g以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>价格</span>
+								<p>
+									<a href="">0-99元</a>
+	                                <a href="">100-199元</a>                          
+	                                <a href="">200-299元</a>                           
+	                                <a href="">300-500元</a>
+	                                <a href="">501-1000元</a>
+	                                <a href="">1000元以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>包装</span>
+								<p>
+									<a href="">罐装</a>                          
+	                                <a href="">袋装</a>
+	                                <a href="">自封袋装</a>
+	                            </p>
+							</li>
+						</ul>
+					</div>
+				</dd>
+				<dd>
+					<h3>黄茶</h3>
+					<h4>
+						<a href="">霍山黄芽</a>
+						<a href="">蒙顶黄芽</a>
+						<span class="arrowRight">&gt;</span>
+					</h4>
+					<div class="branch">
+						<ul>
+							<li>
+								<span>品牌</span>
+								<p>
+									<a href="">霍山黄牙</a>
+	                                <a href="">蒙顶黄牙</a>
+	                                <a href="">君山银针</a>
+	                            	<a href="">北港毛尖</a>                           
+	                                <a href="">远安黄茶</a>
+	                                <a href="">沩江白毛尖</a>
+	                                <a href="">平阳黄汤</a>
+	                                <a href="">皖西黄大茶</a>
+	                                <a href="">海马宫茶</a>
+	                            </p>
+							</li>
+							<li>
+								<span>用途</span>
+								<p>
+									<a href="">经济自饮装</a>
+	                                <a href="">精美礼品装</a>                          
+	                            </p>
+							</li>
+							<li>
+								<span>年份</span>
+								<p>
+									<a href="">2015</a>
+									<a href="">2016</a>
+	                                <a href="">2017</a>                          
+	                                <a href="">2018</a>
+	                            </p>
+							</li>
+							<li>
+								<span>净重</span>
+								<p>
+									<a href="">0—100g</a>
+	                                <a href="">101—300g</a>                          
+	                                <a href="">301—500g</a>                           
+	                                <a href="">501—1000g</a>
+	                                <a href="">1000g以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>价格</span>
+								<p>
+									<a href="">0-99元</a>
+	                                <a href="">100-199元</a>                          
+	                                <a href="">200-299元</a>                           
+	                                <a href="">300-500元</a>
+	                                <a href="">501-1000元</a>
+	                                <a href="">1000元以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>包装</span>
+								<p>
+									<a href="">铁盒装</a>
+	                                <a href="">罐装</a>                          
+	                                <a href="">精美礼盒装</a>                           
+	                                <a href="">盒装</a>
+	                                <a href="">袋装</a>
+	                            </p>
+							</li>
+						</ul>
+					</div>
+				</dd>
+				<dd>
+					<h3>茶具</h3>
+					<h4>
+						<a href="">紫砂壶</a>
+						<a href="">景德洪窑</a>
+						<span class="arrowRight">&gt;</span>
+					</h4>
+					<div class="branch">
+						<ul>
+							<li>
+								<span>品牌</span>
+								<p>
+									<a href="">紫砂壶</a>
+	                                <a href="">飘逸杯</a>
+	                                <a href="">台湾黑彩</a>
+	                            	<a href="">景德红窑</a>                           
+	                            </p>
+							</li>
+							<li>
+								<span>用途</span>
+								<p>
+									<a href="">日常自用</a>
+									<a href="">精美礼品</a>
+	                            </p>
+							</li>
+							<li>
+								<span>价格</span>
+								<p>
+									<a href="">0-99元</a>
+	                                <a href="">100-199元</a>                          
+	                                <a href="">200-299元</a>                           
+	                                <a href="">300-500元</a>
+	                                <a href="">501-1000元</a>
+	                                <a href="">1000元以上</a>
+	                            </p>
+							</li>
+							<li>
+								<span>包装</span>
+								<p>
+									<a href="">精美礼盒装</a>
+	                            </p>
+							</li>
+						</ul>
+					</div>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<!--商品图片展示-->
+<div class="pro_wrap common">
+	<div class="pro_head">
+		<a href="index.html">首页</a>
+		<em class="arrowRight">&gt;</em>
+		<a href="">购物车</a>
+	</div>
+	<div id="cart_container" class="cart_container">
+		<div class="c_head ">
+			<div class="th h_checkBox">
+				<input id="selectAll1" class="check-all" type="checkbox" />
+				<label for="selectAll1">全选</label>
+			</div>
+			<div class="th h_goods">商品信息</div>
+			<div class="th h_price">单价</div>
+			<div class="th h_count">数量</div>
+			<div class="th h_total">小计</div>
+			<div class="th h_action">操作</div>
+		</div>
+		<div class="c_content">
+			<div class="goods_list">
+				<div class="td p_checkBox">
+					<input class="check" type="checkbox" />
+				</div>
+				<div class="td p_goods">
+					<img src="images/tea/p_001.png" />
+					<a href="">云南普洱茶 古树生茶 古树松香 茶叶 茶饼357g</a>
+				</div>
+				<div class="td p_price">¥1260.00</div>
+				<div class="td p_count">
+					<div class="count clearfix">
+						<a href="javascript:void(0);" class="minus">-</a>
+						<input type="text" value="1" class="num" />
+						<a href="javascript:void(0);" class="plus">+</a>
+					</div>
+				</div>
+				<div class="td p_total">¥1260.00</div>
+				<div class="td p_action"><span class="delete">删除</span></div>
+			</div>
+			<div class="goods_list">
+				<div class="td p_checkBox">
+					<input class="check" type="checkbox" />
+				</div>
+				<div class="td p_goods">
+					<img src="images/tea/p_021.jpg" />
+					<a href="">茶叶广东新会生晒小青柑普洱茶年熟茶柑普橘普陈皮散装罐装250g</a>
+				</div>
+				<div class="td p_price">¥88.00</div>
+				<div class="td p_count">
+					<div class="count">
+						<a href="javascript:void(0);" class="minus">-</a>
+						<input type="text" value="1" class="num" />
+						<a href="javascript:void(0);" class="plus">+</a>
+					</div>
+				</div>
+				<div class="td p_total">¥88.00</div>
+				<div class="td p_action"><span class="delete">删除</span></div>
+			</div>
+			<div class="goods_list">
+				<div class="td p_checkBox">
+					<input class="check" type="checkbox" />
+				</div>
+				<div class="td p_goods">
+					<img src="images/tea/p_009.jpg" />
+					<a href="">老同志 普洱茶 熟茶 饼茶 玉寿贡饼 普洱 茶叶 云南七子饼 357g</a>
+				</div>
+				<div class="td p_price">¥218.00</div>
+				<div class="td p_count">
+					<div class="count">
+						<a href="javascript:void(0);" class="minus">-</a>
+						<input type="text" value="1" class="num" />
+						<a href="javascript:void(0);" class="plus">+</a>
+					</div>
+				</div>
+				<div class="td p_total">¥218.00</div>
+				<div class="td p_action"><span class="delete">删除</span></div>
+			</div>
+			<div class="goods_list">
+				<div class="td p_checkBox">
+					<input class="check" type="checkbox" />
+				</div>
+				<div class="td p_goods">
+					<img src="images/tea/p_023.jpg" />
+					<a href="">2017年勐宋滑竹梁子早春头春普洱茶生茶饼高山古树纯料礼盒200g</a>
+				</div>
+				<div class="td p_price">¥198.00</div>
+				<div class="td p_count">
+					<div class="count">
+						<a href="javascript:void(0);" class="minus">-</a>
+						<input type="text" value="1" class="num" />
+						<a href="javascript:void(0);" class="plus">+</a>
+					</div>
+				</div>
+				<div class="td p_total">¥198.00</div>
+				<div class="td p_action"><span class="delete">删除</span></div>
+			</div>
+		</div>
+		<div id="c_foot" class="c_foot">
+			<div class="f_checkBox h_checkBox">
+				<input id="selectAll2" class="check-all" type="checkbox" />
+				<label for="selectAll2">全选</label>
+			</div>
+			<div class="operation">
+				<span id="deleteAll" class="delete">删除选中商品</span>
+			</div>
+			<div class="toolbar">
+				<div id="selected" class="amount-sum">已选商品<strong id="selectedTotal" class="piece_num">0</strong>件</div>
+				<div class="price-sum">合计：<strong id="priceTotal" class="total_text">¥0.00</strong></div>
+				<div class="btn-area"><a href="" class="disabled">去结算</a></div>
+				<div class="selected-view">
+					<div id="selected-view"></div>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--空车-->
+	<div class="shoppingcart_empty">
+		<div class="inner_empty">
+			<h4>您的购物车还是空的，赶紧行动吧~</h4>
+			<p>如果您还未登录，可能导致购物车为空，请<a href="login.html">马上登录</a>
+				<br />如果您已是会员，马上去<a href="index.html">挑选产品</a>
+			</p>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="copyRight">
+		<p>Copyright© 2011-2018 云笈茶社 版权所有，并保留所有权利。</p>
+		<p>粤ICP备16024576号</p>
+		<!---->
+	</div>
+</div>
+<div class="coverBg"></div>
+<div class="pop-up">
+	<div class="popup-inner">
+		<h3>删除宝贝</h3>
+		<p>确定要删除该宝贝吗？</p>
+		<div class="btn-operate">
+			<a href="javascript:void(0);" class="btn-confirm">确定</a>
+			<a href="javascript:void(0);" class="btn-cancel">取消</a>
+		</div>
+	</div>
+	<div class="close-popup">
+		<i class="pe-7s-close"></i>
+	</div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/cart.js"></script>
+<script>
+	$(function () {
+		//商品分类
+		$(".wrap_category").hover(function () {
+			$(".category").toggle();
+		});
+		
+	})
+</script>
+</body>
+</html>
