@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/product.css" />
+<link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
+<link rel="stylesheet" href="http://at.alicdn.com/t/font_270265_h5mpr9iy1zw.css" />
+</head>
+
+<body>
+<div class="logoBox common">
+	<img src="images/yunji.png" alt="logo" />
+</div>
+<div class="login_wrapper">
+	<div class="common" style="position: relative;">
+		<div class="login_wrap">
+			<div class="innerBox">
+				<div class="login_tab">
+					<a href="javascript:void(0);" class="selected">账户登录</a>
+					<a href="javascript:void(0);">扫码登录</a>
+				</div>
+				<div class="login">
+					<ul>
+						<li class="userInfo">
+							<i class="iconfont icon-user1"></i>
+							<input id="userName" class="form-control" type="text" placeholder="手机号/邮箱" />
+						</li>
+						<li class="userInfo">
+							<i class="iconfont icon-mima"></i>
+							<input id="password" class="form-control" type="password" placeholder="密码" />
+						</li>
+						<li class="error" style="display: none;">
+							<i class="pe-7s-close"></i>
+							<em>账号或密码错误</em>
+						</li>
+						<li class="login_link">
+							<label><input type="checkbox" style="vertical-align: middle;" />记住我</label>
+							<a href="">忘记密码</a>
+						</li>
+						<li class="submit"><button>登录</button></li>
+					</ul>
+				</div>
+				<div class="login" style="display: none;">
+					<div class="code">
+						<img src="images/ema.png" alt="扫码登录" />
+					</div>
+				</div>
+			</div>
+			<div class="anotherLogin">
+				<a href="javascript:void(0);">
+					<i class="iconfont icon-qq1"></i>
+					<span>QQ</span>
+				</a> |
+				<a href="javascript:void(0);">
+					<i class="iconfont icon-weixin"></i>
+					<span>微信</span>
+				</a>
+				<a href="javascript:void(0);" class="register fr">
+					<i class="iconfont icon-register"></i>
+					<span>立即注册</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+	$(function () {
+		$(".login_tab a").click(function () {
+			var n = $(this).index();
+			$(this).addClass("selected").siblings().removeClass("selected");
+			$(".login").hide().eq(n).show();
+		})
+	})
+</script>
+</body>
+</html>
